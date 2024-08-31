@@ -3,19 +3,19 @@ import {View, Text, TextInput, StyleSheet, TouchableOpacity} from 'react-native'
 import Header from '../../components/header'
 import Button from '../../components/button'
 
-const LogIn = () => {
+const SighUp = () => {
     return(
         <View style={styles.container}>
             <Header/>
             <View style={styles.inner}>
-                <Text style={styles.title}>Log IN</Text>
+                <Text style={styles.title}>Sigh Up</Text>
                 <TextInput style={styles.input} value='email address'/>
                 <TextInput style={styles.input} value='passsword'/>
                 <Button label='submit'/>
                 <View style={styles.footer}>
-                    <Text style={styles.footerText}>Not Registered?</Text>
+                    <Text style={styles.footerText}>Already Registered?</Text>
                     <TouchableOpacity>
-                        <Text style={styles.footerLink}>Sigh Up Here</Text>
+                    <Text style={styles.footerLink}>Log IN</Text>
                     </TouchableOpacity>
                 </View>
             </View>
@@ -63,4 +63,4 @@ const styles = StyleSheet.create({
     }
 })
 
-export default LogIn
+export default SighUp

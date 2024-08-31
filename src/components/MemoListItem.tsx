@@ -1,4 +1,4 @@
-import {View, Text, StyleSheet} from 'react-native'
+import {View, Text, StyleSheet, TouchableOpacity} from 'react-native'
 
 const MemoListItem = () => {
     return(
@@ -7,11 +7,11 @@ const MemoListItem = () => {
                 <Text style = {styles.memoListItemTitle}>買い物リスト</Text>
                 <Text style = {styles.memoListItemDate}>2023年10月1日 10:00</Text>
             </View>
-            <View>
+            <TouchableOpacity>
                 <Text>
                  ❌
                 </Text>
-            </View>
+            </TouchableOpacity>
         </View>
     )
 }
