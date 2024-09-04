@@ -1,18 +1,21 @@
 import {View, Text, StyleSheet, TouchableOpacity} from 'react-native'
+import {Link} from 'expo-router'
 
 const MemoListItem = () => {
     return(
-        <View style = {styles.memoListItem}>
-            <View>
-                <Text style = {styles.memoListItemTitle}>買い物リスト</Text>
-                <Text style = {styles.memoListItemDate}>2023年10月1日 10:00</Text>
-            </View>
-            <TouchableOpacity>
-                <Text>
-                 ❌
-                </Text>
+        <Link href='/memo/detail' asChild>
+            <TouchableOpacity style = {styles.memoListItem}>
+                <View>
+                    <Text style = {styles.memoListItemTitle}>買い物リスト</Text>
+                    <Text style = {styles.memoListItemDate}>2023年10月1日 10:00</Text>
+                </View>
+                <TouchableOpacity>
+                    <Text>
+                    ❌
+                    </Text>
+                </TouchableOpacity>
             </TouchableOpacity>
-        </View>
+        </Link>
     )
 }
 
